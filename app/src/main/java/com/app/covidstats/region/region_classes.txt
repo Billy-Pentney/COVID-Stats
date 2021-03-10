@@ -1,0 +1,7 @@
+Region is the base class
+
+World is the top-level which contains a list of continents and countries
+
+Continents contain a list of countries
+
+Countries contain a list of subregions

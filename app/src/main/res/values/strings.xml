@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">COVID-19 Data</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- refresh/update strings -->
+    <string name="refresh">Refresh</string>
+    <string name="sort_by" translatable="false">Sort By</string>
+    <string name="last_updated">Last Updated:</string>
+    <string name="never_updated">Never</string>
+
+    <!-- fragment titles -->
+    <string name="overview">Overview</string>
+    <string name="countries">Countries</string>
+    <string name="world">World</string>
+    <string name="about" translatable="false">About</string>
+
+    <!-- region metadata -->
+    <string name="country_name">Country Name</string>
+    <string name="continent">Continent</string>
+    <string name="country_population">Population</string>
+
+    <!-- region stats -->
+    <string name="total_countries">Total Countries</string>
+    <string name="total_cases">Total Cases</string>
+    <string name="total_deaths">Total Deaths</string>
+    <string name="total_tests">Total Tests</string>
+    <string name="active_cases">Active Cases</string>
+    <string name="critical_cases">Serious/Critical Cases</string>
+    <string name="recovered_cases">Recovered Cases</string>
+    <string name="cases_per_mil">Cases (per million)</string>
+    <string name="deaths_per_mil">Deaths (per million)</string>
+    <string name="tests_per_mil">Tests (per million)</string>
+
+    <string name="cases_proportion">Percent of Global Cases</string>
+    <string name="deaths_proportion">Percent of Global Deaths</string>
+    <string name="test_positive_rate">Positive Test Rate</string>
+    <string name="fatality_rate">Fatality Rate</string>
+
+    <string name="daily_cases_graph_title">Daily New Cases (7-Day Average)</string>
+    <string name="daily_deaths_graph_title">Daily New Deaths (7-Day Average)</string>
+    <string name="cases_graph_title">@string/total_cases</string>
+    <string name="deaths_graph_title">@string/total_deaths</string>
+
+    <!-- Miscellaneous strings -->
+    <string name="at">at</string>
+    <string name="view_by_country">View By Country</string>
+    <string name="placeholder_percent" translatable="false">X.XX%</string>
+    <string name="placeholder_num" translatable="false">XX</string>
+    <string name="check_internet">Please check your internet connection</string>
+    <string name="flag_content_description">Image of the flag belonging to this country</string>
+    <string name="error_timed_out">Connection timed out. Please check your internet connection!</string>
+    <string name="error_graph_timed_out">Graphs could not be displayed - connection timed out.</string>
+
+    <!-- Trust? fragment -->
+    <string name="flu_title">But what about the flu?</string>
+    <string name="seasonal_flu_stats">
+        Every year an estimated 290,000 to 650,000 people die in the
+        world due to complications from seasonal influenza (flu) viruses.
+        This figure corresponds to 795 to 1,781 deaths per day due to the seasonal flu.
+    </string>
+</resources>

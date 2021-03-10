@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CovidStats" parent="Theme.AppCompat">
+        <item name="android:colorBackground">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorWhite</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Theme.CovidStats.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.CovidStats.Infected">
+        <item name="android:colorBackground">@color/colorInfectedBkg</item>
+        <item name="colorPrimary">@color/colorInfected</item>
+    </style>
+
+    <style name="Theme.CovidStats.Recovered">
+        <item name="android:colorBackground">@color/colorRecoveredBkg</item>
+        <item name="colorPrimary">@color/colorRecovered</item>
+    </style>
+
+    <style name="Theme.CovidStats.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.CovidStats.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />
+</resources>

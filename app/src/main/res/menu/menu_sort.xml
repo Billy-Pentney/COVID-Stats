@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.app.covidtracker.MainActivity">
+    <item
+        android:id="@+id/menu_sort_by"
+        android:icon="@drawable/sort_icon"
+        android:title="@string/sort_by"
+        android:titleCondensed="@string/sort_by"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/submenu_name"
+                    android:title="@string/country_name" />
+                <item
+                    android:id="@+id/submenu_cases"
+                    android:checked="true"
+                    android:title="@string/total_cases" />
+                <item
+                    android:id="@+id/submenu_deaths"
+                    android:title="@string/total_deaths" />
+                <item
+                    android:id="@+id/submenu_cases_pm"
+                    android:title="@string/cases_per_mil" />
+                <item
+                    android:id="@+id/submenu_deaths_pm"
+                    android:title="@string/deaths_per_mil" />
+                <item
+                    android:id="@+id/submenu_population"
+                    android:title="@string/country_population" />
+            </group>
+        </menu>
+    </item>
+</menu>

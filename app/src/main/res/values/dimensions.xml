@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="covidImageSize">300dp</dimen>
+    <dimen name="covidImageAlpha">0.03</dimen>
+
+    <!-- Font on Country_View layout -->
+    <dimen name="countryTextSizeLarge">20sp</dimen>
+    <dimen name="countryTextSizeMed">18sp</dimen>
+    <dimen name="countryTextSizeSmall">14sp</dimen>
+
+    <!-- Global Counters on Overview Tab -->
+    <dimen name="counterTitleTextSize">24sp</dimen>
+    <dimen name="counterBodyTextSize">60sp</dimen>
+    <dimen name="counterSubTextSize">22sp</dimen>
+    <dimen name="counterPadding">12dp</dimen>
+
+    <dimen name="newTopicMargin">24dp</dimen>
+    <dimen name="sameTopicMargin">12dp</dimen>
+
+    <!-- controls graphs/titles in CountryDetailFragment -->
+    <dimen name="graphTitleTextSize">18sp</dimen>
+    <dimen name="graphViewHeight">200dp</dimen>
+    <dimen name="graphViewMarginTop">32dp</dimen>
+
+    <!-- controls the opacity of the continent image view in the header of CountryDetailFragment -->
+    <item name="continentHeaderAlpha" format="float" type="dimen">0.15</item>
+</resources>

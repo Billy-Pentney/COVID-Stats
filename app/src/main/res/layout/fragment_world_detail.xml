@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+
+
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="?attr/actionBarSize"
+            android:padding="32dp">
+
+            <TextView
+                android:id="@+id/casesTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/casesValTxt"
+                android:text="@string/total_cases" />
+
+            <TextView
+                android:id="@+id/deathsTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/casesTxt"
+                android:layout_alignStart="@+id/casesTxt"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="@dimen/sameTopicMargin"
+                android:layout_toStartOf="@id/deathsValTxt"
+                android:text="@string/total_deaths" />
+
+            <TextView
+                android:id="@+id/casesValTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/casesTxt"
+                android:layout_alignParentEnd="true"
+                android:text="@string/placeholder_num"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/colorDarkWhite" />
+
+            <TextView
+                android:id="@+id/deathsValTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/deathsTxt"
+                android:layout_alignEnd="@id/casesValTxt"
+                android:text="@string/placeholder_num"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/colorDarkWhite" />
+
+            <TextView
+                android:id="@+id/countriesTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deathsTxt"
+                android:layout_alignStart="@+id/casesTxt"
+                android:layout_marginTop="@dimen/sameTopicMargin"
+                android:layout_toStartOf="@id/countriesValTxt"
+                android:text="@string/total_countries" />
+
+            <TextView
+                android:id="@+id/countriesValTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/countriesTxt"
+                android:layout_alignEnd="@+id/casesValTxt"
+                android:text="@string/placeholder_num"
+                android:textColor="@color/colorDarkWhite" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

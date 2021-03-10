@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Données COVID-19</string>
+    <string name="never_updated">Jamais</string>
+    <string name="countries">Pays</string>
+    <string name="total_cases">Total de cas</string>
+    <string name="total_deaths">Total de décès</string>
+    <string name="total_tests">Total des tests</string>
+    <string name="country_name">Nom de pays</string>
+    <string name="cases_per_mil">Cas (par million)</string>
+    <string name="deaths_per_mil">Décès (par million)</string>
+    <string name="tests_per_mil">Tests (par million)</string>
+    <string name="critical_cases">Cas graves/critiques</string>
+    <string name="flag_content_description">L\'image du drapeau de ce pays</string>
+    <string name="action_settings">Réglages</string>
+    <string name="refresh">Actualiser</string>
+    <string name="last_updated">Dernière mise à jour:</string>
+    <string name="overview">Vue générale</string>
+    <string name="view_by_country">Vue par pays</string>
+    <string name="country_population">Population</string>
+    <string name="continent">Continent</string>
+    <string name="check_internet">S\'il vous plait, vérifiez votre connexion internet</string>
+    <string name="seasonal_flu_stats">Chaque année, entre 290 000 et 650 000 personnes meurent dans le monde des suites de complications liées aux virus de la grippe saisonnière (grippe). Ce chiffre correspond à 795 à 1 781 décès par jour dus à la grippe saisonnière.</string>
+    <string name="flu_title">Et la grippe?</string>
+    <string name="cases_proportion">Cas mondiaux (%)</string>
+    <string name="deaths_proportion">Décès dans le monde (%)</string>
+    <string name="cases_graph_title" translatable="false">\@string/total_cases</string>
+    <string name="deaths_graph_title">\@string/total_deaths</string>
+    <string name="error_timed_out">La connexion a expiré. Veuillez vérifier votre connexion Internet!</string>
+    <string name="daily_cases_graph_title">Nouveaux cas quotidiens (moyenne sur 7 jours)</string>
+    <string name="daily_deaths_graph_title">Nouveaux décès quotidiens (moyenne sur 7 jours)</string>
+    <string name="error_graph_timed_out">Une connexion Internet est nécessaire pour afficher les graphiques</string>
+    <string name="at">à</string>
+    <string name="test_positive_rate">Taux de test positif</string>
+    <string name="fatality_rate">Taux de mortalité</string>
+    <string name="recovered_cases">Cas récupérés</string>
+    <string name="active_cases">Cas actifs</string>
+    <string name="world">Monde</string>
+    <string name="total_countries">Total de pays</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">COVID-19-Daten</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="refresh">Aktualisierung</string>
+    <string name="last_updated">Letzte Aktualisierung:</string>
+    <string name="never_updated">Nie</string>
+    <string name="overview">Überblick</string>
+    <string name="countries">Länder</string>
+    <string name="total_cases">Gesamtfälle</string>
+    <string name="total_deaths">Gesamttodesfälle</string>
+    <string name="total_tests">Gesamttests</string>
+    <string name="critical_cases">Schwerwiegende/kritische Fälle</string>
+    <string name="view_by_country">Ansicht nach Land</string>
+    <string name="country_name">Ländername</string>
+    <string name="country_population">Population</string>
+    <string name="tests_per_mil">Tests (pro Million)</string>
+    <string name="cases_per_mil">Fälle (pro Million)</string>
+    <string name="deaths_per_mil">Todesfälle (pro Million)</string>
+    <string name="continent">Kontinent</string>
+    <string name="check_internet">Bitte überprüfe deine Internetverbindung</string>
+    <string name="flag_content_description">Bild der Flagge dieses Landes</string>
+    <string name="seasonal_flu_stats">Jedes Jahr sterben weltweit schätzungsweise 290.000 bis 650.000 Menschen an den Folgen von saisonalen Influenzaviren. Diese Zahl entspricht 795 bis 1.781 Todesfällen pro Tag aufgrund der saisonalen Grippe.</string>
+    <string name="flu_title">Aber was ist mit der Grippe?</string>
+    <string name="deaths_proportion">Globale Todesfälle (%)</string>
+    <string name="cases_proportion">Globale Fälle (%)</string>
+    <string name="deaths_graph_title">\@string/total_deaths</string>
+    <string name="cases_graph_title">\@string/total_cases</string>
+    <string name="error_timed_out">Zeitüberschreitung der Verbindung. Bitte überprüfen Sie Ihre Internetverbindung!</string>
+    <string name="daily_deaths_graph_title">Tägliche neue Todesfälle (7-Tage-Durchschnitt)</string>
+    <string name="daily_cases_graph_title">Tägliche Neuerkrankungen (7-Tage-Durchschnitt)</string>
+    <string name="error_graph_timed_out">Für die Anzeige der Grafiken ist eine Internetverbindung erforderlich</string>
+    <string name="at">um</string>
+    <string name="test_positive_rate">Positive Testrate</string>
+    <string name="fatality_rate">Sterblichkeitsrate</string>
+    <string name="recovered_cases">Wiederhergestellte Fälle</string>
+    <string name="active_cases">Aktuelle Fälle</string>
+    <string name="total_countries">Länder insgesamt</string>
+    <string name="world">Welt</string>
+</resources>

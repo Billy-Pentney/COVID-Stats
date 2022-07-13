@@ -62,19 +62,27 @@ public class Region {
     private boolean hasUniqueFlag = false;
 
     public Region(String name, String population) {
-        this.name = name;
+        this.name = extractRegionName(name);
         setDisplayName(name);
-
         this.population = StringToInt(population);
+    }
+
+    private String extractRegionName(String name) {
+        // This is a case where the scraped data does not match the expected country name
+        // so we have to manually set its name
+        if (name.equals("DPRK"))
+            return "n. korea";
+        return name;
     }
 
     public void setDisplayName(String name) {
         this.displayName = name.replace(" and ", " & ");
 
-        // dataset uses short versions of these names,
-        // this function replaces those cases with the full names
+        // The dataset uses short versions of these names, so this
+        // function replaces those cases with the full names
         final String CAR_FULL = "Central African Republic";
         final String DRC_FULL = "Democratic Republic of the Congo";
+        final String N_KOREA_FULL = "North Korea";
         final String S_KOREA_FULL = "South Korea";
         final String ST_VINCENT_FULL = "St. Vincent & the Grenadines";
         final String UAE_FULL = "United Arab Emirates";
@@ -82,20 +90,19 @@ public class Region {
         // cases which improve readability of countries
         switch (displayName) {
             case "CAR":
-                displayName = CAR_FULL;
-                break;
+                displayName = CAR_FULL;        break;
             case "DRC":
-                displayName = DRC_FULL;
+                displayName = DRC_FULL;        break;
+            case "DPRK":
+            case "N. Korea":
+                displayName = N_KOREA_FULL;
                 break;
             case "S. Korea":
-                displayName = S_KOREA_FULL;
-                break;
+                displayName = S_KOREA_FULL;    break;
             case "St. Vincent Grenadines":
-                displayName = ST_VINCENT_FULL;
-                break;
+                displayName = ST_VINCENT_FULL; break;
             case "UAE":
-                displayName = UAE_FULL;
-                break;
+                displayName = UAE_FULL;        break;
         }
     }
 
@@ -148,15 +155,13 @@ public class Region {
 
     private Drawable GetDrawable(Context context) {
         Drawable d = GetDrawableFromName(context, name);
+        // Indicates that this region has a name which corresponds to a drawable flag
+        hasUniqueFlag = (d != null);
 
-        if (d == null) {
-            // if the requested resource could not be found,
-            // load the null flag image
+        // If the requested resource could not be found,
+        // then load the null flag image
+        if (!hasUniqueFlag) {
             d = GetDrawableFromName(context, null_flag_name);
-            hasUniqueFlag = false;
-        }
-        else {
-            hasUniqueFlag = true;
         }
 
         return d;
@@ -324,20 +329,19 @@ public class Region {
 
     private float GetProportionFloat(int numerator, int denominator) {
         final int dp = 2;                           // number of decimal places in the result
-        float multiplier = (float)Math.pow(10, dp);
+        float powOfTen = (float)Math.pow(10, dp);
 
-            /*
-             calculates the proportion that the local (regional) value is
+        /*
+             Calculates the proportion that the local (regional) value is
              out of the total (global stats), as a percentage
 
-             1) Multiply by 100 to get percentage,
-             2) Multiply by 10^n to get n s.f.
-             3) Round to truncate any further decimals
-             4) Divide to get a float with n d.p.
-            */
+             1) Multiply by 10^n to get n s.f.
+             2) Round to truncate any further decimals
+             3) Divide by 10^n to get a float with n d.p.
+        */
 
         float rawVal = (float)numerator / denominator;
-        return Math.round(100 * multiplier * rawVal) / multiplier;
+        return Math.round(powOfTen * rawVal) / powOfTen;
     }
 
     public static String IntToString(int number) {
@@ -418,7 +422,7 @@ public class Region {
     public int[] getDailyDeathsGraph_Y() { return dailyDeathsGraph_Y; }
 
     public void setCasesGraph_Y(int[] newData) { this.casesGraph_Y = newData; }
-    public void setDeathsGraph_Y(int[] newData) { this.deathsGraph_Y = newData;; }
+    public void setDeathsGraph_Y(int[] newData) { this.deathsGraph_Y = newData; }
     public void setDailyCasesGraph_Y(int[] newData) { this.dailyCasesGraph_Y = newData; }
     public void setDailyDeathsGraph_Y(int[] newData) { this.dailyDeathsGraph_Y = newData; }
 
